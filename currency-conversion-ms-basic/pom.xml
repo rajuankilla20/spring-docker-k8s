@@ -6,7 +6,7 @@
 
     <groupId>com.rajuankilla20.ms</groupId>
     <artifactId>currency-conversion-ms-basic</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.0.1-RELEASE</version>
 
     <description>Demo project for Spring Boot</description>
 
@@ -120,7 +120,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
             <!-- Docker -->
-         <!--   <plugin>
+            <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>dockerfile-maven-plugin</artifactId>
                 <version>1.4.6</version>
@@ -129,7 +129,7 @@
                         <id>default</id>
                         <goals>
                             <goal>build</goal>
-                            &lt;!&ndash; <goal>push</goal> &ndash;&gt;
+                             <goal>push</goal>
                         </goals>
                     </execution>
                 </executions>
@@ -138,7 +138,7 @@
                     <tag>${project.version}</tag>
                     <skipDockerInfo>true</skipDockerInfo>
                 </configuration>
-            </plugin>-->
+            </plugin>
         </plugins>
     </build>
 
