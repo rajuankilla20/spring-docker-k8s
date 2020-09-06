@@ -6,4 +6,8 @@
   - Ingress: Acts as a gatgway for many services instead of having one loadbalancer for each server 
     -  Need to change the LoadBalancer to NodePort and created the ingress file which is work as a gateway
 # FeignClient - Used to call rest api instead of using RestTemplate 
-#RibbonClient - use for client side load balancing  
+# RibbonClient - use for client side load balancing  
+# Docker images for these two services 
+    - rajuankilla20/currency-conversion:0.0.1-RELEASE
+   - rajuankilla20/currency-exvhange:0.0.1-RELEASE
+
