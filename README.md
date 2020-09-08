@@ -19,7 +19,11 @@
    -	Once ingress in created change the Load Balance to Node Point as we are not exposing directly to client
 # RibbonClient - use for client side load balancing  
   - Workes as client side load balancer and to discover k8s services using api we have to apply 
+  - no need of any env variables for services names
+  - we have to do @EnableDiscoveryClient along with @EnableFeignClient ( which we use for calling proxy services)
+  - we have to provide ServiceAccount access to the k8s cluster using CusterRoleBinding rbac.yml file
+# spring-cloud-started-kubernetes using 
 # Docker images for these two services 
     - rajuankilla20/currency-conversion:0.0.1-RELEASE
-   - rajuankilla20/currency-exvhange:0.0.1-RELEASE
+    - rajuankilla20/currency-exvhange:0.0.1-RELEASE
 
