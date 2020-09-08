@@ -22,7 +22,16 @@
   - no need of any env variables for services names
   - we have to do @EnableDiscoveryClient along with @EnableFeignClient ( which we use for calling proxy services)
   - we have to provide ServiceAccount access to the k8s cluster using CusterRoleBinding rbac.yml file
-# spring-cloud-started-kubernetes using 
+# spring-cloud-started-kubernetes dependency using 
+   - Ref : https://www.baeldung.com/spring-cloud-kubernetes
+   - Ref : https://cloud.spring.io/spring-cloud-static/spring-cloud-kubernetes/2.1.0.RC1/single/spring-cloud-kubernetes.html
+   - Facilitate the integration of Spring Cloud/Spring Boot applications running inside Kubernetes.
+   - Spring MS can discover the service end points for Ribbon client which acts as client side Loadbalancer.
+# spring-cloud-starter-kubernetes-config   
+   - Ref : https://www.baeldung.com/spring-cloud-kubernetes
+   - MS will have access  to the ConfigMaps and secrects created in the cluster with few conditions.
+    - configmap name is same as spring.application.name in the application.properties, then those properties will be available in Bootstrap time, we can check in the logs as well those configmap prop values
+  
 # Docker images for these two services 
     - rajuankilla20/currency-conversion:0.0.1-RELEASE
     - rajuankilla20/currency-exvhange:0.0.1-RELEASE
