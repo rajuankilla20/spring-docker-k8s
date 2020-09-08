@@ -1,0 +1,7 @@
+com\rajuankilla20\ms\currencyconversionservice\security\SecurityConfiguration.class
+com\rajuankilla20\ms\currencyconversionservice\util\environment\InstanceInformationService.class
+com\rajuankilla20\ms\currencyconversionservice\resource\CurrencyConversionController.class
+com\rajuankilla20\ms\currencyconversionservice\resource\CurrencyExchangeServiceProxy.class
+com\rajuankilla20\ms\currencyconversionservice\util\environment\EnvironmentConfigurationLogger.class
+com\rajuankilla20\ms\currencyconversionservice\CurrencyConversionServiceApplication.class
+com\rajuankilla20\ms\currencyconversionservice\resource\CurrencyConversionBean.class
