@@ -125,7 +125,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
             <!-- Docker -->
-          <!--  <plugin>
+            <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>dockerfile-maven-plugin</artifactId>
                 <version>1.4.6</version>
@@ -134,7 +134,7 @@
                         <id>default</id>
                         <goals>
                             <goal>build</goal>
-                            &lt;!&ndash; <goal>push</goal> &ndash;&gt;
+                            <!-- <goal>push</goal> -->
                         </goals>
                     </execution>
                 </executions>
@@ -143,7 +143,7 @@
                     <tag>${project.version}</tag>
                     <skipDockerInfo>true</skipDockerInfo>
                 </configuration>
-            </plugin>-->
+            </plugin>
         </plugins>
     </build>
 
