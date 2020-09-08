@@ -30,9 +30,15 @@
 # spring-cloud-starter-kubernetes-config   
    - Ref : https://www.baeldung.com/spring-cloud-kubernetes
    - MS will have access  to the ConfigMaps and secrects created in the cluster with few conditions.
-    - configmap name is same as spring.application.name in the application.properties, then those properties will be available in Bootstrap time, we can check in the logs as well those configmap prop values
-  
-# Docker images for these two services 
+   - configmap name is same as spring.application.name in the application.properties, then those properties will be available in Bootstrap time, we can check in the logs as well those configmap prop values
+# Vertical and Horizontal Autoscalling 
+    - Horizontal : Increasing the nodes or pods 
+    - Vertical : Increasing the CPU or Memory of each Node or pod
+    - For these we have to execute commonds on cluster and for HPA we have a kind : HorizontalPodAutoscaler we can define diff parameters like targetCPUUtilizationPercentage: 10, min and Max replicas etc
+# Docker images 
+  - for the basic two services 
     - rajuankilla20/currency-conversion:0.0.1-RELEASE
     - rajuankilla20/currency-exvhange:0.0.1-RELEASE
+  - For currency-conversion-cloud
+    - rajuankilla20/currency-conversion:0.0.2-RELEASE
 
