@@ -14,9 +14,9 @@ metadata:
   name: fabric8-rbac
 subjects:
   - kind: ServiceAccount
-    # Reference to upper's `metadata.name`
+    # Reference to (above kind: ServiceAccount) `metadata.name`
     name: default
-    # Reference to upper's `metadata.namespace`
+    # Reference to (above kind: ServiceAccount) `metadata.namespace`
     namespace: default
 roleRef:
   kind: ClusterRole
