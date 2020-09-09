@@ -36,6 +36,15 @@
     - Vertical : Increasing the CPU or Memory of each Node or pod
     - For these we have to execute commonds on cluster and for HPA we have a kind : HorizontalPodAutoscaler we can define diff parameters like targetCPUUtilizationPercentage: 10, min and Max replicas etc
 #Distributed Tracing 
+   - Need to enable API's in GCP
+      - APIs & Services (search)
+        - Click on ENABLE APIS AND SERVICES button
+        - Search and enable below APIs
+          - Stackdriver API
+          - Stackdriver Monitoring API (MANAGE means already enabled)
+          - Stackdriver Trace API
+          - Stackdriver Error Reporting API        - 
+      
    - Image
       - openjdk:8 instead of openjdk:8-jdk-alpine, as stack driver use few features in openjdk8
    - Dependencies 
