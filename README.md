@@ -35,8 +35,9 @@
     - Horizontal : Increasing the nodes or pods 
     - Vertical : Increasing the CPU or Memory of each Node or pod
     - For these we have to execute commonds on cluster and for HPA we have a kind : HorizontalPodAutoscaler we can define diff parameters like targetCPUUtilizationPercentage: 10, min and Max replicas etc
-#Distributed Tracing 
+# Distributed Tracing (StackDriver)
    - Need to enable API's in GCP
+      - StackDriver is now called Operations (https://cloud.google.com/products/operations)
       - APIs & Services (search)
         - Click on ENABLE APIS AND SERVICES button
         - Search and enable below APIs
