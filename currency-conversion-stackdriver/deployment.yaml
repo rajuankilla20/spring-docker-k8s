@@ -22,7 +22,7 @@ spec:
         app: currency-conversion
     spec:
       containers:
-      - image: rajuankilla20/currency-conversion:0.0.3-RELEASE #CHANGE
+      - image: rajuankilla20/currency-conversion:0.0.4-RELEASE #CHANGE
         imagePullPolicy: Always #CHANGE
         name: currency-conversion
         env:   #CHANGE
