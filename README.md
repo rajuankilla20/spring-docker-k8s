@@ -36,6 +36,8 @@
     - Vertical : Increasing the CPU or Memory of each Node or pod
     - For these we have to execute commonds on cluster and for HPA we have a kind : HorizontalPodAutoscaler we can define diff parameters like targetCPUUtilizationPercentage: 10, min and Max replicas etc
 #Distributed Tracing 
+   - Image
+      - openjdk:8 instead of openjdk:8-jdk-alpine, as stack driver use few features in openjdk8
    - Dependencies 
       - spring-cloud-starter-sleuth
       - spring-cloud-gcp-starter-trace
