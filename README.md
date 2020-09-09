@@ -35,10 +35,20 @@
     - Horizontal : Increasing the nodes or pods 
     - Vertical : Increasing the CPU or Memory of each Node or pod
     - For these we have to execute commonds on cluster and for HPA we have a kind : HorizontalPodAutoscaler we can define diff parameters like targetCPUUtilizationPercentage: 10, min and Max replicas etc
+#Distributed Tracing 
+   - Dependencies 
+      - spring-cloud-starter-sleuth
+      - spring-cloud-gcp-starter-trace
+      - spring-cloud-gcp-starter-logging      
+  
 # Docker images 
   - for the basic two services 
     - rajuankilla20/currency-conversion:0.0.1-RELEASE
     - rajuankilla20/currency-exvhange:0.0.1-RELEASE
   - For currency-conversion-cloud
     - rajuankilla20/currency-conversion:0.0.2-RELEASE
+  - For currency-conversion-stackdriver
+    -rajuankilla20/currency-conversion:0.0.3-RELEASE
+  - For currency-exchange-stackdriver
+    -rajuankilla20/exchange-conversion:0.0.3-RELEASE
 
