@@ -45,7 +45,13 @@
           - Stackdriver Monitoring API (MANAGE means already enabled) (Cloud Monitoring API)
           - Stackdriver Trace API (Cloud Trace API)
           - Stackdriver Error Reporting API  (ERROR Reporting API)       - 
-      
+   - Log filters which we can apply while search tracid 
+     - resource.type="k8s_container"
+     - resource.labels.project_id="jkomart-categories-service"
+     - resource.labels.location="us-central1-c" 
+     - resource.labels.cluster_name="jk-cluster-1"
+     - resource.labels.namespace_name="default"
+     - labels.k8s-pod/app="currency-conversion"
    - Image
       - openjdk:8 instead of openjdk:8-jdk-alpine, as stack driver use few features in openjdk8
    - Dependencies 
