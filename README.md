@@ -40,10 +40,10 @@
       - APIs & Services (search)
         - Click on ENABLE APIS AND SERVICES button
         - Search and enable below APIs
-          - Stackdriver API
-          - Stackdriver Monitoring API (MANAGE means already enabled)
-          - Stackdriver Trace API
-          - Stackdriver Error Reporting API        - 
+          - Stackdriver API 
+          - Stackdriver Monitoring API (MANAGE means already enabled) (Cloud Monitoring API)
+          - Stackdriver Trace API (Cloud Trace API)
+          - Stackdriver Error Reporting API  (ERROR Reporting API)       - 
       
    - Image
       - openjdk:8 instead of openjdk:8-jdk-alpine, as stack driver use few features in openjdk8
