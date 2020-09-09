@@ -46,7 +46,7 @@
       - #In production reduce sampling-rate to 0.01
         #opentracing.jaeger.probabilistic-sampler.sampling-rate=1.0 , tracing all requests 
         - spring.sleuth.sampler.probability=1.0
-      - #opentracing.jaeger.enable-b3-propagation=true
+      - #opentracing.jaeger.enable-b3-propagation=true, spring.cloud.gcp.trace.enabled=ture in deployment.yml (SPRING_COULD-GCP_TRACE_ENABLED: true)
         - spring.cloud.gcp.trace.enabled=false
   
 # Docker images 
