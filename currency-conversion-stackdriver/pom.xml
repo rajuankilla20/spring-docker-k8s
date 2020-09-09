@@ -6,7 +6,7 @@
 
     <groupId>com.rajuankilla20.ms</groupId>
     <artifactId>currency-conversion-stackdriver</artifactId>
-    <version>0.0.3-RELEASE</version>
+    <version>0.0.4-RELEASE</version>
     <packaging>jar</packaging>
     <name>currency-conversion</name>
     <description>Demo project for Spring Boot</description>
