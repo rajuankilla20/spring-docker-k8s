@@ -41,7 +41,13 @@
    - Dependencies 
       - spring-cloud-starter-sleuth
       - spring-cloud-gcp-starter-trace
-      - spring-cloud-gcp-starter-logging      
+      - spring-cloud-gcp-starter-logging   
+   - application.properties
+      - #In production reduce sampling-rate to 0.01
+        #opentracing.jaeger.probabilistic-sampler.sampling-rate=1.0 , tracing all requests 
+        - spring.sleuth.sampler.probability=1.0
+      - #opentracing.jaeger.enable-b3-propagation=true
+        - spring.cloud.gcp.trace.enabled=false
   
 # Docker images 
   - for the basic two services 
